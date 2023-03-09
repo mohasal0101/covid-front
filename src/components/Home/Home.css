@@ -45,7 +45,7 @@
     justify-content: center;
 }
 
-.dummy-div{
+.background-card{
     background-color: #FB2576;
     color: #FB2576;
 }
@@ -84,6 +84,6 @@
     text-align: center;
 }
 
-.mid-home-container{
+.container{
     margin-top: 50px;
 }
