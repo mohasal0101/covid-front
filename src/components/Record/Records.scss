@@ -1,0 +1,23 @@
+.heading-text {
+    color: hsl(0, 0%, 0%);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+  }
+  
+  .heading-text span {
+    transition: 0.5s ease-out;
+  }
+  .heading-text:hover span:nth-child(1) {
+    margin-right: 5px;
+  }
+ 
+  .heading-text:hover span:nth-child(2) {
+    margin-left: 30px;
+  }
+  .heading-text:hover span {
+    color: #6e6c6c;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  }

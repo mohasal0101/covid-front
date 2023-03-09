@@ -1,0 +1,62 @@
+.allcountries-main-container{
+    min-height: 100vh;
+}
+
+.country-card-container{
+    padding: 25px;
+    display: flex;
+    height: max-content;
+}
+
+.dummy{
+    background-color: #FB2576;
+    color: #FB2576;
+}
+
+
+.country-data-container{
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.country-label{
+    font-size: large;
+    font-weight: 600;
+    color: #FB2576;
+}
+
+.date-label{
+    padding-bottom: 5px;
+    border-bottom: grey dashed;
+}
+
+.add-records{
+    padding: 10px;
+    align-self: center;
+    background-color: #1746A2;
+    color: white;
+    border: hidden;
+}
+
+.add-records:hover{
+    cursor: pointer;
+}
+.summery-holder{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.all{
+    text-align: center;
+}
+.error-message-countries{
+    font-size: xx-large;
+    color: #FB2576;
+    font-weight: 600;
+    text-align: center;
+}
