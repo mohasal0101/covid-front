@@ -33,16 +33,16 @@ export const Cards = ({
       )
   };
   return (
-    <div className="country-card-container">
+    <div className="card-container">
       <div className="dummy">''</div>
-      <div className="country-data-container">
-        <label className="country-label">Country: {country}</label>
+      <div className="data-container">
+        <label className="label">Country: {country}</label>
         <label>Total Confirmed cases: {cases}</label>
         <label>Total Deaths cases: {death}</label>
         <label>Total Recovered cases: {recovered}</label>
         <label className="date-label">Date: {date}</label>
         <button
-          className="add-records"
+          className="records"
           onClick={() => handleAdd(country, date)}
         >
           ADD TO MY RECORDS

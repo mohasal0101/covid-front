@@ -2,7 +2,7 @@
     min-height: 100vh;
 }
 
-.country-card-container{
+.card-container{
     padding: 25px;
     display: flex;
     height: max-content;
@@ -14,7 +14,7 @@
 }
 
 
-.country-data-container{
+.data-container{
     display: flex;
     padding: 15px;
     flex-direction: column;
@@ -22,7 +22,7 @@
     text-align: center;
 }
 
-.country-label{
+.label{
     font-size: large;
     font-weight: 600;
     color: #FB2576;
@@ -33,7 +33,7 @@
     border-bottom: grey dashed;
 }
 
-.add-records{
+.records{
     padding: 10px;
     align-self: center;
     background-color: #1746A2;
@@ -41,10 +41,10 @@
     border: hidden;
 }
 
-.add-records:hover{
+.records:hover{
     cursor: pointer;
 }
-.summery-holder{
+.holder{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

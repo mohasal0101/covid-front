@@ -22,7 +22,7 @@ export const Countries = () => {
       <h1 className="all">
       <span>Countries </span>Statics <span>Data</span>
       </h1>
-      <div className="summery-holder">
+      <div className="holder">
         {summery?.length ? (
           summery.map((item, index) => (
             <Cards
