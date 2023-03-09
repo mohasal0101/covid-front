@@ -10,7 +10,7 @@ export const Records = () => {
 
   const handleDelete = async (id) => {
     await axios
-      .delete(`${process.env.REACT_APP_LOCAL_SERVER}/record/${id}`)
+      .delete(`${process.env.REACT_APP_LOCAL}/record/${id}`)
       .then((resolve) => {
         Swal.fire({
           title: 'Are you sure?',
@@ -38,7 +38,7 @@ export const Records = () => {
   useEffect(() => {
     const fetchData = async () => {
       await axios
-        .get(`${process.env.REACT_APP_LOCAL_SERVER}/record`)
+        .get(`${process.env.REACT_APP_LOCAL}/record`)
         .then((resolve) => setMyRecords(resolve.data))
         .catch((rejected) => console.log("error!"));
     };
