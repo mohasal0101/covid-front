@@ -18,7 +18,7 @@ export const Cards = ({
     };
 
     await axios
-      .post(`${process.env.REACT_APP_LOCAL_SERVER}/record`,record)
+      .post(`${process.env.REACT_APP_LOCAL}/record`,record)
       .then((resolve) => {
         Swal.fire({
                   title: 'Country has been added to records!',
@@ -34,7 +34,7 @@ export const Cards = ({
   };
   return (
     <div className="card-container">
-      <div className="dummy">''</div>
+      <div className="bg">''</div>
       <div className="data-container">
         <label className="label">Country: {country}</label>
         <label>Total Confirmed cases: {cases}</label>

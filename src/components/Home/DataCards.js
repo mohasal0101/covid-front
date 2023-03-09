@@ -5,8 +5,8 @@ import React, { useEffect, useState } from 'react'
  export const DataCards = () => {
     const [statics, setStatics] = useState({});
     useEffect(() => {
-        console.log('hello');
-        axios.get(process.env.REACT_APP_TOTAL_STATICS).then(resolve => setStatics(prev => prev = resolve.data))
+        console.log('test');
+        axios.get(process.env.REACT_APP_STATICS).then(resolve => setStatics(prev => prev = resolve.data))
         .catch(rejected => setStatics(prev => prev = rejected));
     },[])
    return (

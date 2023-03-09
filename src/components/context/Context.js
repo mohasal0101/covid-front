@@ -5,7 +5,7 @@ export const Context = createContext();
 
 const ContextProvider = ({ children }) => {
   const [records, setRecords] = useState([]);
-  const [errMsg, setErrMsg] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -21,17 +21,17 @@ const ContextProvider = ({ children }) => {
       )
       .then((resolve) =>{
         setRecords(resolve.data)
-        setErrMsg('')
+        setErrorMessage('')
       } 
       )
-      .catch((rejected) => setErrMsg('No Data try to explore another country!'));
+      .catch((rejected) => setErrorMessage('No Data try to explore another country!'));
   };
 
   const value = {
     records,
     setRecords,
     handleSearch,
-    errMsg
+    errorMessage
   };
 
   return (

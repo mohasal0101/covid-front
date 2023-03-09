@@ -5,7 +5,7 @@ import { DataCountry } from './DataCountry'
 import {CountryCard} from './CountryCard'
 import { Context } from '../context/Context'
 export const Home = () => {
-  const {records, errMsg} = useContext( Context )
+  const {records, errorMessage} = useContext( Context )
   return (
     <div className='main-home-container'>
         <DataCards />
@@ -19,7 +19,7 @@ export const Home = () => {
              
              : 
              <div className='error-container'>
-             <label className='error-message'>{errMsg}</label>
+             <label className='error-message'>{errorMessage}</label>
             </div>
         }
         </div>

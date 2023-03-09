@@ -10,7 +10,6 @@ export const Records = () => {
 
   const handleDelete = async (id) => {
     await axios
-      //delete using swal alert
       .delete(`${process.env.REACT_APP_LOCAL_SERVER}/record/${id}`)
       .then((resolve) => {
         Swal.fire({
